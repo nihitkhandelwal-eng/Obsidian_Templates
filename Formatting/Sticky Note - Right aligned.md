@@ -1,0 +1,1 @@
+<p class="stickies"><%tp.file.cursor(0)%></p> <%tp.file.cursor(1)%>
