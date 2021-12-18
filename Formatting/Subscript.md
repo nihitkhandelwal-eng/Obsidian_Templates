@@ -1,1 +1,1 @@
-<sub></sub> <%tp.file.cursor(1)%>
+<sub><%tp.file.cursor(0)%></sub> <%tp.file.cursor(1)%>

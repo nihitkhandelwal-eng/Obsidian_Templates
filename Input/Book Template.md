@@ -1,6 +1,6 @@
 ---
-tags: 
 aliases:
+tags: 
 author:
 ---
 
@@ -11,3 +11,5 @@ Summary
 Key Take-aways & Highlights
 Books & Sources Cited
 Quotes
+
+<% await tp.file.move("/🌿 Notes/Books/" + tp.file.title) %>

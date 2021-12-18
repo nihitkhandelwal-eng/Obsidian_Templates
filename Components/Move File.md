@@ -1,0 +1,1 @@
+<% await tp.file.move("/🌿 Notes/👤 People/" + tp.file.title) %>
