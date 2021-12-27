@@ -1,1 +1,0 @@
-<% await tp.file.move("/🌿 Notes/MOC's/" + tp.file.title) %>

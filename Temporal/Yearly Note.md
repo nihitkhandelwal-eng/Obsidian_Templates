@@ -3,10 +3,10 @@
 # <%+ tp.file.title %> in great detail
 ---
 ## Annual Review
-- *`Review Journal Highlights`*
-	- <%tp.file.cursor(0)%>
+### Review Journal Highlights
+- <%tp.file.cursor(0)%>
 
-- *`Insights from Tracking Data`*
-	- 
+### Insights from Tracking Data
+- 
 
 <% await tp.file.move("/🌱 Journal/Review Cycles/Yearly Notes/" + tp.file.title) %>

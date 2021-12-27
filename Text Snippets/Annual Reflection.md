@@ -1,16 +1,14 @@
 ## Annual Reflection
-### Past Year Gratitude
+### This Year Gratitude
 - What were the most meaningful and impactful elements from the past Year?
 
 ---
 
-### Past Year Reflections & Insights
+### This Year Reflections & Insights
 - Biggest wins for the year? ;  In what moments did it feel like I was working within my zone of genius?
-
-- Biggest challenge(s) I overcame?
-- How did I rise to that/those challenges? How did I change in the process?
+ ^f9ece9
+- Biggest challenge(s) I overcame? How did I rise to that/those challenges? How did I change in the process?
 - What made me most happy this year?
-- What made me most satisfied or proud?
 - What bummed me out the most? Could I have done more to avoid it? Does it still bother me? Should I just let it go and move on?
 - Who had the biggest positive impact on my life?
 - What patterns and feedback loops had an impact on my life in the past year? Did they help or hurt?

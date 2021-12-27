@@ -16,5 +16,7 @@ WinTheDay:
 ### Consume
 ### Cerebrate
 ---  
+## Day Planner
+- 
   
 <% await tp.file.move("/🌱 Journal/Daily Notes/" + tp.file.title) %>
