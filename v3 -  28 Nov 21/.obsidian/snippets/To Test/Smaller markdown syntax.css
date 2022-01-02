@@ -1,0 +1,9 @@
+/*small markdown syntax*/
+.cm-formatting {
+        font-size: 10px !important;
+}
+/*restore tag syntax size*/
+.cm-formatting.cm-formatting-hashtag.cm-hashtag-be
+gin.cm-hashtag{
+ font-size: var(--font-small) !important;
+}

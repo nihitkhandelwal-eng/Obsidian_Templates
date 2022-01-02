@@ -1,0 +1,136 @@
+{
+  "workspaces": {
+    "Base": {
+      "main": {
+        "id": "ed60f18adbe008ab",
+        "type": "split",
+        "children": [
+          {
+            "id": "239e25bf8d2eb1e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🏡 Home Note.md",
+                "mode": "source"
+              }
+            }
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "ddc8adecd585cb71",
+        "type": "split",
+        "children": [
+          {
+            "id": "3c141da60e1237f2",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "d8218d91b24d9b29",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "61b3b0101cac9475",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "tag:#status/someday",
+                    "matchingCase": true,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "7f229d53a6fd0506",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 238
+      },
+      "right": {
+        "id": "0eb55f72b52503a9",
+        "type": "split",
+        "children": [
+          {
+            "id": "a63f96277ed084a1",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "cb4f76260c97ca48",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "🏡 Home Note.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "fad8e5fb6396f247",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "🏡 Home Note.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "bd39560081e4a6f4",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "d4f35c8ecd90e0fd",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "🏡 Home Note.md"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300,
+        "collapsed": true
+      },
+      "active": "239e25bf8d2eb1e0"
+    }
+  },
+  "active": "Base"
+}

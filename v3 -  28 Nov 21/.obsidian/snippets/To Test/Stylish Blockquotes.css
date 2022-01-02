@@ -1,0 +1,96 @@
+/* Stylish Blockquotes
+https://forum.obsidian.md/t/meta-post-common-css-hacks/1978/39
+*
+.theme-dark.minimal-light-contrast .workspace-fake-target-overlay.is-in-sidebar,
+.theme-dark.minimal-light-contrast .titlebar,
+.theme-dark.minimal-light-contrast .status-bar,
+.theme-dark.minimal-light-contrast .workspace-ribbon.mod-left,
+.theme-dark.minimal-light-contrast .mod-left-split,
+.theme-dark.minimal-light-contrast .modal.mod-settings .vertical-tab-header,
+.theme-dark {
+--text-accent:hsl(var(--accent-h),var(--accent-s),var(--accent-d));
+--text-vfaint:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 15%));
+--text-vmuted:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 17%));
+}
+.theme-light.minimal-light-contrast .workspace-fake-target-overlay.is-in-sidebar,
+.theme-light.minimal-light-contrast .titlebar,
+.theme-light.minimal-light-contrast .status-bar,
+.theme-light.minimal-light-contrast .workspace-ribbon.mod-left,
+.theme-light.minimal-light-contrast .mod-left-split,
+.theme-light.minimal-light-contrast .modal.mod-settings .vertical-tab-header,
+.theme-light {
+--text-accent:hsl(var(--accent-h),var(--accent-s),var(--accent-d));
+--text-vfaint:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 15%));
+--text-vmuted:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 17%));
+}*/
+
+
+/* BLOCKQUOTE */
+/* Add quotation character before quote */
+blockquote:before {
+  font: italic 2em sans-serif;
+  color: var(--text-vvfaint);
+  content: "\201F";
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+  margin:-0.2em;
+}
+  
+blockquote p { 
+  display: inline; 
+  margin: -0.6em;
+}
+
+.markdown-preview-view blockquote {
+  border-radius:0;
+  border:solid var(--text-vfaint);
+  border-width:0px 0px 0px 2px;
+  background-color:transparent;
+  color:var(--text-muted);
+  padding:0 0 0 calc(var(--nested-padding) / 1);
+  margin-inline-start:var(--nested-padding);
+}
+
+/* paraPhrase Blockquotes  =
+= <blockquote class=pp>Like this</pp>*/
+
+.markdown-preview-view blockquote.pp {
+  border-radius:0;
+  border:solid var(--text-vfaint);
+  border-width:0px 0px 0px 2px;
+  background-color:transparent;
+  color:var(--text-accent);
+  padding:0 0 0 calc(var(--nested-padding) / 1);
+  margin-inline-start:var(--nested-padding);
+}
+.markdown-preview-view blockquote.pp:before { 
+	display: none;
+}
+
+/* JeffSays Blockquote =
+= <blockquote class=js>Like this</js>*/
+
+.markdown-preview-view blockquote.js {
+  border-radius:0;
+  border:solid var(--text-vmuted);
+  border-width:0px 0px 0px 2px;
+  background-color:transparent;
+  color:var(--text-muted);
+  padding:0 0 0 calc(var(--nested-padding) / 1);
+  margin-inline-start:var(--nested-padding);
+}
+
+.markdown-preview-view blockquote.js:before { 
+  font: italic 4em "Frank Ruhl Libre";
+  color: var(--text-vvfaint);
+  content: "JS";
+  font-size: 4em;
+  font-weight: 800;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+  margin:-0.2em;
+}
+
+

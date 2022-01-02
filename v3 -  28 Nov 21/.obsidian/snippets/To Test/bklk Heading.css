@@ -1,0 +1,61 @@
+/*You can't make a heading 7, because there's only six different HTML headings
+(h1, h2, h3, h4, h5 and h6; reference: http://www.w3schools.com/tags/tag_hn.asp), 
+but you can make more 'headings' with this CSS code:
+*/
+.theme-dark {
+   --text-normal:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 53%));
+   --interactive-a2a:RGB(54,62,67,90);
+ }
+ .theme-light {
+   --text-normal: black;
+   --interactive-a2a:RGB(228,233,235);
+ }
+
+.bklk { 
+   font-family:Georama,"Neue Haas Unica Pro","Flama Trial","Söhne Leicht","Mint Grotesk V1.0";
+    text-transform: inherit;
+    letter-spacing:0.07em;
+    background-color:var(--interactive-a2a);
+    font-weight:500;
+    font-size:1em;
+    color:var(--text-normal);
+    text-align:center;
+ }
+ /*
+and this HTML code:
+
+<h6 class="bklk">I am special!</h6>
+
+<div class="bklk">Backlinks</div>
+*/
+.overdue { 
+    font-family:Georama,"Neue Haas Unica Pro","Flama Trial","Söhne Leicht";
+    text-transform: inherit;
+    letter-spacing:0.07em;
+    background-color: #236473;
+    font-weight:500;
+    font-size:1em;
+    color: snow;
+    text-align:center;
+ }
+
+ .today { 
+    font-family:Georama,"Neue Haas Unica Pro","Flama Trial","Söhne Leicht";
+    text-transform: inherit;
+    letter-spacing:0.07em;
+    background-color: #579AAA;
+    font-weight:500;
+    font-size:1em;
+    color: snow;
+    text-align:center;
+ }
+ .weeks2 { 
+    font-family:Georama,"Neue Haas Unica Pro","Flama Trial","Söhne Leicht";
+    text-transform: inherit;
+    letter-spacing:0.07em;
+    background-color: #7BA6B2;
+    font-weight:500;
+    font-size:1em;
+    color: snow/*var(--interactive-accent)*/;
+    text-align:center;
+ }

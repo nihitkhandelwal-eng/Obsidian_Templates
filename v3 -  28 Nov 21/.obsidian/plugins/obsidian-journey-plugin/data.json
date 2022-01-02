@@ -1,0 +1,11 @@
+{
+  "useForwardLinks": true,
+  "useBackLinks": true,
+  "useTags": true,
+  "skipMOCs": true,
+  "MOCMaxLinks": 30,
+  "enableHighContrast": false,
+  "skipFolders": "☘️ Templates/, ♻️ Admin/, 🌱 Journal/",
+  "enableLinks": false,
+  "enableTransclusion": false
+}

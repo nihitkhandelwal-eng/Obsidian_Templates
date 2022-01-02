@@ -1,0 +1,35 @@
+{
+  "outputFileName": "Unlinked files output",
+  "disableWorkingLinks": true,
+  "directoriesToIgnore": [
+    "♻️ Admin/",
+    "☘️ Templates/",
+    "🌱 Journal/"
+  ],
+  "filesToIgnore": [],
+  "fileTypesToIgnore": [],
+  "linksToIgnore": [],
+  "tagsToIgnore": [],
+  "fileTypesToDelete": [],
+  "ignoreFileTypes": false,
+  "ignoreDirectories": true,
+  "unresolvedLinksOutputFileName": "unresolved links output",
+  "unresolvedLinksDirectoriesToIgnore": [
+    "♻️ Admin/",
+    "☘️ Templates/",
+    "🌱 Journal/"
+  ],
+  "unresolvedLinksFilesToIgnore": [],
+  "unresolvedLinksFileTypesToIgnore": [],
+  "unresolvedLinksLinksToIgnore": [],
+  "unresolvedLinksTagsToIgnore": [],
+  "withoutTagsDirectoriesToIgnore": [
+    "♻️ Admin/",
+    "☘️ Templates/",
+    "🌱 Journal/"
+  ],
+  "withoutTagsFilesToIgnore": [
+    ""
+  ],
+  "withoutTagsOutputFileName": "files without tags"
+}

@@ -1,0 +1,72 @@
+/* Tags */
+
+.tag, div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hashtag-end {
+  background-color: transparent!important;
+  border:1px solid var(--interactive-accent)!important;
+  color:var(--text-muted)!important;
+  font-size:var(--font-small)!important;
+  font-family:var(--font-ui)!important;
+  padding:0px 6px!important;
+  text-align:center!important;
+  text-decoration:none!important;
+  display:inline-block!important;
+  margin:2px 0 0 0!important;
+  border-radius:4px!important;
+  vertical-align:baseline;
+}
+
+.frontmatter-container .tag,
+a.tag {
+  background-color:transparent;
+  border:1px solid var(--interactive-accent);
+  color:var(--text-muted);
+  font-size:var(--font-small);
+  font-family:var(--font-ui);
+  padding:0px 6px;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  margin:2px 0 0 0;
+  border-radius:4px;
+  vertical-align:baseline;
+}
+a.tag:hover {
+  color:var(--text-normal);
+  border-color:var(--interactive-accent-hover)!important;
+}
+.cm-s-obsidian span.cm-hashtag {
+  background-color:transparent;
+  border:1px solid var(--background-modifier-border);
+  color:var(--text-muted);
+  font-size:var(--font-small);
+  font-family:var(--font-ui);
+  padding:0px 6px;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  margin:2px 0 0 0;
+  border-radius:4px;
+  cursor:text;
+  vertical-align:baseline;
+}
+span.cm-hashtag.cm-hashtag-begin {
+  border-radius: 4px 0px 0px 4px;
+  padding-left:4px;
+  padding-right: 0px;
+  border-right:none;
+  border-left:1px solid var(--interactive-accent);
+  border-top:1px solid var(--interactive-accent);
+  border-bottom:1px solid var(--interactive-accent);
+  vertical-align:top;
+}
+span.cm-hashtag.cm-hashtag-end {
+  border-radius: 0px 4px 4px 0px;
+  border-left:none;
+  padding-right:4px;
+  padding-left: 0px;
+  border-right:1px solid var(--interactive-accent);
+  border-top:1px solid var(--interactive-accent);
+  border-bottom:1px solid var(--interactive-accent);
+  vertical-align:baseline;
+}
+

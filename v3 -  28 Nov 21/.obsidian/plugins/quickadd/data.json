@@ -1,0 +1,209 @@
+{
+  "choices": [
+    {
+      "id": "74709413-2008-4fa5-b783-7a979e5cb76b",
+      "name": "🔋 Capture to Workbench",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "🔋 Workbench.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "- {{DATE:HH:mm}} → {{VALUE}}\\n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": true,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "54f4fff1-5c6a-42b7-93a3-9a004259a255",
+      "name": "😎 Capture to Daily Note",
+      "type": "Capture",
+      "command": true,
+      "appendLink": false,
+      "captureTo": "🌱 Journal/Daily Notes/{{DATE:DD-MMM-YY}}.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": true,
+        "template": "☘️ Templates/Daily Notes.md"
+      },
+      "format": {
+        "enabled": true,
+        "format": "- {{DATE:HH:mm}} → {{VALUE}}\\n"
+      },
+      "insertAfter": {
+        "enabled": true,
+        "after": "### Consume",
+        "insertAtEnd": true,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": true,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "preview"
+    },
+    {
+      "id": "ea79df6e-adb7-440d-8cf5-0e5257293bec",
+      "name": "📅 Capture to Weekly Note",
+      "type": "Capture",
+      "command": false,
+      "appendLink": false,
+      "captureTo": "🌱 Journal/Review Cycles/Weekly Notes/{{DATE:YYYY-[W]ww}}.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": true,
+        "template": "☘️ Templates/Weekly Note.md"
+      },
+      "format": {
+        "enabled": true,
+        "format": "- {{DATE:dddd/HH:mm}} → {{VALUE}}\\n"
+      },
+      "insertAfter": {
+        "enabled": true,
+        "after": "### Highlight of this week",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "e4eff12e-5c56-4e6a-a7c5-72e0015d041d",
+      "name": "📆 Capture to Monthly Note",
+      "type": "Capture",
+      "command": false,
+      "appendLink": false,
+      "captureTo": "🌱 Journal/Review Cycles/Monthly Notes/{{DATE:MMMM-YYYY}}",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": true,
+        "template": "☘️ Templates/Monthly Note.md"
+      },
+      "format": {
+        "enabled": true,
+        "format": "- {{DATE:DD MMM | HH:mm}} → {{VALUE}}\\n"
+      },
+      "insertAfter": {
+        "enabled": true,
+        "after": "### Highlight of this month",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "69ee573f-d334-4bb8-8c97-abe6a1db265e",
+      "name": "🌐 Capture to Quarterly Note",
+      "type": "Capture",
+      "command": false,
+      "appendLink": false,
+      "captureTo": "🌱 Journal/Review Cycles/Quarterly Notes/{{DATE:YYYY - [Q]Q}}.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": true,
+        "template": "☘️ Templates/Quarterly Note.md"
+      },
+      "format": {
+        "enabled": true,
+        "format": "    - {{DATE:DD MMM | HH:mm}} → {{VALUE}}\\n"
+      },
+      "insertAfter": {
+        "enabled": true,
+        "after": "*`Review Journal Highlights`*",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    },
+    {
+      "id": "79a099bf-98c7-45ba-bad5-930d239e194b",
+      "name": "🎉 Capture to Yearly Note",
+      "type": "Capture",
+      "command": false,
+      "appendLink": false,
+      "captureTo": "🌱 Journal/Review Cycles/Yearly Notes/{{DATE:YYYY}}.md",
+      "captureToActiveFile": false,
+      "createFileIfItDoesntExist": {
+        "enabled": true,
+        "createWithTemplate": true,
+        "template": "☘️ Templates/Yearly Note.md"
+      },
+      "format": {
+        "enabled": true,
+        "format": "    - {{DATE:DD MMM | HH:mm}} → {{VALUE}}\\n"
+      },
+      "insertAfter": {
+        "enabled": true,
+        "after": "*`Review Journal Highlights`*",
+        "insertAtEnd": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top"
+      },
+      "prepend": false,
+      "task": false,
+      "openFileInNewTab": {
+        "enabled": false,
+        "direction": "vertical",
+        "focus": true
+      },
+      "openFile": false,
+      "openFileInMode": "default"
+    }
+  ],
+  "macros": []
+}

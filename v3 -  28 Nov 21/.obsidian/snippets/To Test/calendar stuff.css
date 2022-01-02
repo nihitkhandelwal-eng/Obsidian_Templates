@@ -1,0 +1,65 @@
+/* Calendar Mini */
+/* obsidian-calendar-plugin */
+/* https://github.com/liamcain/obsidian-calendar-plugin */
+
+
+#calendar-container {
+  font-size: 0.85em;
+  padding:5px 15px;
+  margin: 0% 8% 0% 8%;
+}
+
+#calendar-container th {
+  padding: 1px;
+  border-radius:0px;
+}
+
+#calendar-container .day,
+#calendar-container .week-num {
+  padding: 0px;
+
+}
+#calendar-container .today {
+  color: red!important;
+  font-weight:bold;
+  background-color:transparent;
+  font-family: "Suisse Screen", sans-serif;
+  padding-top: 0px;
+}
+
+#calendar-container .active {
+  color:var(--Text-normal);
+  /*background-color:var(--today)!important;*/
+}
+#calendar-container .active, #calendar-container .active.today, #calendar-container .week-num:hover, #calendar-container .day:hover {
+  background-color: var(--text-vvfaint)!important;
+}
+
+#calendar-container .year {
+  color: var(--interactive-accent);
+}
+
+/* I added this - for v2.0 this might need muting */
+#calendar-container .dot-container {
+  display: none;
+}
+
+/* Calendar Emoji */
+#calendar-container [data-emoji-tag]::after {
+  content: attr(data-emoji-tag);
+  position: absolute;
+  top: -4px;
+  right: 4px;
+  height: 8px;
+  width: 8px;
+}
+
+/* Calendar Birthday */
+#calendar-container [data-tags~="flagged"]::after {
+  content: url("data:image/svg+xml,%3Csvg width='15px' height='14px' viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3Cpolygon fill='orange' stroke='orange' stroke-width='8' color='orange' points='150,25 179,111 269,111 197,165 223,251 150,200 77,251 103,165 31,111 121,111' /%3E%3C/svg%3E");;
+  position: absolute;
+  top: -4px;
+  right: 4px;
+  height: 8px;
+  width: 8px;
+}

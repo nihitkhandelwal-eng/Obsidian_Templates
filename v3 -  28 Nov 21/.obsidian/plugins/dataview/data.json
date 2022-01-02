@@ -1,0 +1,20 @@
+{
+  "renderNullAs": "\\-",
+  "taskLinkLocation": "end",
+  "taskLinkText": "🔗",
+  "taskCompletionTracking": false,
+  "taskCompletionText": "completion",
+  "warnOnEmptyResult": true,
+  "refreshInterval": 250,
+  "defaultDateFormat": "MMMM, dd, yyyy",
+  "defaultDateTimeFormat": "HH:mm  - MMMM dd, yyyy",
+  "maxRecursiveRenderDepth": 6,
+  "tableIdColumnName": "Name",
+  "tableGroupColumnName": "Group",
+  "inlineQueryPrefix": "=",
+  "inlineJsQueryPrefix": "$=",
+  "enableDataviewJs": true,
+  "enableInlineDataviewJs": true,
+  "prettyRenderInlineFields": true,
+  "schemaVersion": 1
+}

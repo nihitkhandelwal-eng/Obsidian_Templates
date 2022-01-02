@@ -1,0 +1,10 @@
+{
+  "todoPageName": "",
+  "showChecked": false,
+  "groupBy": "page",
+  "sortDirection": "new->old",
+  "ignoreFiles": "Template",
+  "includeFiles": "",
+  "lookAndFeel": "compact",
+  "_collapsedSections": []
+}

@@ -1,0 +1,668 @@
+/* Adjusted from Minimal Obsidian 2.0 by @kepano */
+
+/* ---------------------------------------------------------------- */
+
+/* TOC
+
+Options
+
+  Disabled features
+  Colors
+  Font styles
+  Cursor
+
+Theme
+
+Special Features
+
+  Frameless mode
+  Andy mode for use with Sliding Panes plugin
+  App ribbon removed
+  Focus mode
+  Image zoom
+
+Minimal Styling
+
+  Headings and fonts
+  Icons
+  Tags
+  Modals
+  Drag ghost
+  Workspace
+  Window frame
+  Title bar
+  Editor mode
+  Internal search
+  Sidebar documents
+  Toggle switches
+  File browser
+  Outline
+  Search
+  Tag pane
+  Status bar
+  Sidedock icons
+  Preview mode
+  Code
+  Popovers
+  Graphs
+  Scrollbars
+
+
+---------------------------------------------------------------- */
+
+:root {
+
+
+  /*----------------------------------------------------------------
+
+  Colors
+
+  Most colors in this theme are driven from the following values,
+  meaning that the backgrounds, borders, and various shades are 
+  automatically generated for you.
+
+  - Base color is used for the backgrounds, text and borders.
+  - Accent color is used for links and some interactive elements.
+
+  The colors use HSL (hue, saturation, lightness)
+
+  - Hue (0-360 degrees):0 is red, 120 is green, and 240 is blue
+  - Saturation (0-100%):0% is desaturated, 100% is full saturation
+  - Lightness (0-100%):0% is black, 100% is white
+
+  *
+
+  --base-h:0;       /* Base hue *
+  --base-s:0%;      /* Base saturation *
+  --base-d:16%;     /* Base lightness Dark Mode  - 0 is black *
+  --base-l:96%;     /* Base lightness Light Mode  - 100 is white *
+  --accent-h:201;   /* Accent hue *
+  --accent-s:17%;   /* Accent saturation *
+  --accent-d:60%;   /* Accent lightness Dark Mode *
+  --accent-l:50%;   /* Accent lightness Light Mode *
+
+  /*----------------------------------------------------------------
+/* old fonts ==  ==
+Font styles
+
+  Preview mode and UI */
+
+  --text:"Suisse Screen","Sequel Sans Body","Neue Haas Unica Pro",sans-serif;
+  
+  /* Editor mode */
+
+  --text-editor:"Suisse Screen","Sequel Sans Body","Neue Haas Unica Pro",sans-serif;
+  
+  /* Code */
+
+  --font-monospace:Inconsolata,"Suisse Int'l Mono","NanumGothicCoding",monospace;
+
+  --editor-font-size: 1em;
+ /* Sizes, weights, padding */
+
+--font-normal:16px;
+--font-small:13px;
+--font-smaller:11px;
+--font-smallest:10px;
+
+--h1:2.9em;
+--h2:1em;
+--h3:1em;
+--h4:1em;
+--h5:0.9em;
+--h6:0.7em;
+
+--h1-weight:300;
+--h2-weight:400;
+--h3-weight:500;
+--h4-weight:500;
+--h5-weight:500;
+--h6-weight:300;
+
+--h1-color:var(--interactive-accent);
+--h2-color:var(--interactive-accent);
+--h3-color:var(--interactive-accent);
+--h4-color:var(--interactive-accent);
+--h5-color:var(--interactive-accent);
+--h6-color:var(--interactive-accent);
+
+--normal-weight:250;   /* Switch to 300 if you want thinner default text */
+--bold-weight:600;     /* Switch to 700 if you want thicker bold text */
+--line-width:40rem;    /* Maximum characters per line */
+--line-height:1.8;
+--max-width:85%;       /* Amount of padding around the text, use 90% for narrower padding */
+--nested-padding:3.5%; /* Amount of padding for quotes and transclusions */
+--icon-muted:0.4;
+--border-width:1px;
+--border-width-alt:1px;
+--input-height:36px;
+
+
+--yellow:#e5b567;
+--green:#b4d273;
+--orange:#e87d3e;
+--purple:#9e86c8;
+--pink:#b05279;
+--blue:#6c99bb;
+
+}
+
+/* Desktop font sizes */
+body {
+--font-adaptive-normal:var(--font-normal);
+--font-adaptive-small:var(--font-small);
+--font-adaptive-smaller:var(--font-smaller);
+--font-adaptive-smallest:var(--font-smallest);
+--line-width-adaptive:var(--line-width);
+}
+
+
+  /*----------------------------------------------------------------
+
+  Cursor
+
+  Change this to "pointer" if you like the normal style better */
+
+  --cursor:default;   
+
+}
+
+/*----------------------------------------------------------------
+
+THEME
+
+  These values are mostly driven by the options above */
+
+.theme-light.minimal-light-contrast .workspace-fake-target-overlay.is-in-sidebar,
+.theme-light.minimal-light-contrast .titlebar,
+.theme-light.minimal-light-contrast .status-bar,
+.theme-light.minimal-light-contrast .workspace-ribbon.mod-left,
+.theme-light.minimal-light-contrast .mod-left-split,
+.theme-light.minimal-light-contrast .modal.mod-settings .vertical-tab-header,
+.theme-dark {
+  --background-primary:hsl(var(--base-h),var(--base-s),var(--base-d));
+  --background-primary-alt:hsl(var(--base-h),var(--base-s),calc(var(--base-d) - 2%));
+  --background-secondary:hsl(var(--base-h),var(--base-s),calc(var(--base-d) - 2%));
+  --background-secondary-alt:hsl(var(--base-h),var(--base-s),var(--base-d));
+  --background-tertiary:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 2%));
+  --background-modifier-border:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 4%));
+  --background-modifier-border-hover:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 10%));
+  --background-modifier-border-focus:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 20%));
+  --background-modifier-box-shadow:rgba(22, 22, 22, 0.3);
+  --normal-weight:300!important;
+  --text-normal:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 15%));
+  --text-muted:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 40%));
+  --text-vmuted:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 51%));
+  --text-faint:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 30%));
+  --text-vfaint:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 15%));
+  --text-vvfaint:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 10%));
+  --background-transparent:hsla(var(--base-h),var(--base-s),var(--base-d),0);
+  --background-translucent:hsla(var(--base-h),var(--base-s),var(--base-d),0.85);
+  --background-match-highlight:hsla(var(--accent-h), 40%, 62%, 0.2);
+  --background-modifier-accent:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-d) - 10%));
+  --text-accent:hsl(var(--accent-h),var(--accent-s),var(--accent-d));
+  --text-accent-hover:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-d) + 12%));
+  --text-on-accent:white;
+  --interactive-accent:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-d) - 10%));
+  --interactive-accent-hover:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-d) - 15%));
+  /*--quote-opening-modifier:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 10%));*/
+  --interactive-accent-rgb:66, 66, 66;
+  --text-selection:hsla(var(--accent-h),70%,40%,30%);
+  --text-highlight-bg:rgba(255, 177, 80, 0.3);
+  --text-highlight-bg-active:rgba(255, 177, 80, 0.3);
+  --background-modifier-cover:hsla(var(--base-h),var(--base-s),calc(var(--base-d) - 12%),0.8);
+  --header-hash:#3b3b3b;
+  --table-lines: #888787;
+  --interactive-a:RGB(62,87,100);
+  --interactive-a2:#363e43/*RGB(35,50,57)*/;
+  --interactive-a2a:RGB(54,62,67,90);
+  --today:#3b3b3b;
+  --background-active-line:RGB(255, 255, 255, 0.02)!important;
+  --background-active-line-a: rgba(122, 215, 252, 0.171)!important;
+}
+.theme-light {
+  --background-primary:white;
+  --background-primary-alt:hsl(var(--base-h),var(--base-s),var(--base-l));
+  --background-secondary:hsl(var(--base-h),var(--base-s),var(--base-l));
+  --background-secondary-alt:hsl(var(--base-h),var(--base-s),var(--base-l));
+  --background-tertiary:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 5%));
+  --background-modifier-border:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 6%));
+  --background-modifier-border-hover:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 16%));
+  --background-modifier-border-focus:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 24%));
+  --background-modifier-box-shadow:rgba(233, 231, 231, 0.3);
+  --text-normal: black;
+  --normal-weight:325;
+  --text-muted:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 45%));
+  --text-vmuted:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 56%));
+  --text-faint:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 38%));
+  --text-vfaint:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 15%));
+  --text-vvfaint:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 11%));
+  --background-transparent:hsla(var(--base-h),var(--base-s),var(--base-l),0);
+  --background-translucent:rgba(255,255,255,0.85);
+  --background-match-highlight:hsla(var(--accent-h), 40%, 62%, 0.2);
+  --background-modifier-accent:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) + 10%));
+  --text-accent:hsl(var(--accent-h),var(--accent-s),var(--accent-5));
+  --text-accent-hover:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) - 10%));
+
+  --text-on-accent:white;
+  --interactive-accent:hsl(var(--accent-h),var(--accent-s),var(--accent-l));
+  --interactive-accent-hover:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) - 10%));
+  --interactive-a2:/*RGB(224,232,234)*/#d2dbde;
+  --interactive-a2a:RGB(228,233,235);
+  --interactive-a3: #E5EDED;
+  --today:#CFCFCF;
+  /*--quote-opening-modifier:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 10%));
+  */
+  --interactive-accent-rgb:220, 220, 220;
+  --text-selection:hsl(var(--accent-h),50%,91%);
+  --text-highlight-bg:rgba(255, 224, 0, 0.5);
+  --text-highlight-bg-active:rgba(255, 224, 0, 0.5);
+  --background-modifier-cover:hsla(var(--base-h),var(--base-s),calc(var(--base-l) - 5%),0.7);
+  --header-hash:#e2e1e1;
+  --table-lines: #6c6c6c;
+  --interactive-a:RGB(120,151,166);
+  --background-active-line: rgba(0, 0, 0, 0.07)!important;
+  --background-active-line-a: rgba(1, 79, 99, 0.13)!important;
+}
+.theme-light.minimal-light-tonal {
+  --background-primary:hsl(var(--base-h),var(--base-s),var(--base-l));
+  --background-primary-alt:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 4%));
+  --background-translucent:hsla(var(--base-h),var(--base-s),var(--base-l),0.85);
+}
+.theme-dark.minimal-dark-tonal {
+  --background-secondary:hsl(var(--base-h),var(--base-s),var(--base-d));
+  --background-tertiary:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 4%));
+}
+.theme-dark.minimal-dark-black {
+  --base-d:0%;
+  --background-primary-alt:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 6%));
+  --background-tertiary:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 8%));
+  --background-modifier-border:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 12%));
+  --background-modifier-border-hover:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 20%));
+  --background-modifier-border-focus:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 30%));
+  --background-modifier-cover:hsla(var(--base-h),var(--base-s),calc(var(--base-d) + 8%),0.9);
+  --text-normal:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 75%));
+  --text-muted:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 50%));
+  --text-faint:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 45%));
+  --icon-muted:0.5;
+}
+.borders-low {
+  --border-width:0px;
+  --border-width-alt:1px;
+}
+.borders-none {
+  --border-width:0px;
+  --border-width-alt:0px;
+}
+
+/* --------------- */
+
+/* MINIMAL STYLING */
+
+/* Headings and fonts */
+
+h1,h2,h3,h4,h5,h6 {
+  text-rendering: optimizeLegibility !important;
+  font-feature-settings: "kern"!important;
+}
+body, input, button, 
+.cm-s-obsidian .cm-formatting-hashtag,
+.cm-s-obsidian {
+  font-family:var(--text)!important;
+  font-size:var(--font-normal);
+  font-weight:var(--normal-weight);
+  line-height:var(--line-height);
+  letter-spacing: 0.06em;
+  -webkit-font-smoothing:subpixel-antialiased;
+  font-variant-ligatures: common-ligatures;
+}
+.markdown-source-view,
+.cm-s-obsidian .cm-formatting-hashtag, 
+.cm-s-obsidian {
+  line-height:var(--line-height);
+  font-family:var(--text-editor) !important;
+}
+
+
+.cm-formatting-header {
+  color:var(--text-faint) !important;
+  font-weight:var(--normal-weight) !important;
+}
+.view-header-title,
+.file-embed-title,
+.markdown-embed-title {
+  letter-spacing:-0.01em;
+  text-align:left;
+  font-size:0.85em;
+  font-weight:var(--normal-weight);
+  color: var(--interactive-accent);
+  padding-top: 1px;
+  padding-right: 0px!important;
+}
+.markdown-embed {
+  background-color: var(--background-modifier-box-shadow);
+  border-top: 2px;
+  border-top-color: #6c6c6c;
+  margin-top: 7px!important;
+}
+
+.empty-state-title,
+.markdown-preview-view h1,
+.HyperMD-header-1,
+.cm-header-1 {
+  font-family:"Suisse Screen","Sequel Sans Body","Neue Haas Unica Pro",sans-serif;
+  letter-spacing:0.05em;
+  font-size:2.9em;
+  line-height:1;
+  font-weight:400!important;
+  text-transform: uppercase;
+  /*background-color: var(--interactive-a);*/
+  color:var(--interactive-accent)!important;/*rgba(250, 250, 250, 0.90)*/;
+  text-align:center!important;
+  border-bottom:none!important;
+  padding-bottom: 2px;
+}
+
+.markdown-preview-view h1 {
+  padding-top: 10px;
+}
+
+.markdown-preview-view h2,
+.HyperMD-header-2,
+.cm-header-2 {
+  font-family:"Suisse Screen","Sequel Sans Body","Neue Haas Unica Pro";
+  letter-spacing:0.05em;
+  font-weight: 500!important;
+  text-transform: uppercase;
+  font-size: 1.1em !important;
+  line-height:1rem;
+  color:var(--interactive-accent)!important;
+  margin: 5px 0px 0px 0px;
+  margin-block-start: 0px;
+  padding-bottom: 1px!important;
+  padding-top: 6px!important;
+}
+
+.markdown-preview-view h3,
+.HyperMD-header-3,
+.cm-header-3 {
+  font-family:"Suisse Screen","Sequel Sans Body","Neue Haas Unica Pro",sans-serif;;
+  letter-spacing: 0.04em;
+  font-weight: 400 !important;
+  font-size: 1.15em !important;
+  text-transform: capitalize !important;
+  line-height:1;
+  text-align: left;
+  color:var(--interactive-accent-hover)!important;
+  padding-left:15px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.markdown-preview-view h4,
+.HyperMD-header-4,
+.cm-header-4 {
+  font-family:"Suisse Screen","Sequel Sans Body","Neue Haas Unica Pro",sans-serif;
+  font-style: italic;
+  letter-spacing:0.04em;
+  color:var(--interactive-accent)!important;
+  font-weight:500;
+  font-size:1em;
+}
+.markdown-preview-view h5,
+.HyperMD-header-5,
+.cm-header-5 { 
+  font-family:"Suisse Screen","Sequel Sans Body","Neue Haas Unica Pro",sans-serif;
+  font-variant: unset!important;
+  letter-spacing:0.1em;
+  color:var(--interactive-accent)!important;
+  text-transform: uppercase;
+  font-weight:500 !important;
+  font-size: 0.9em !important;
+  text-align: center;
+  line-height:1;
+  padding-bottom:0.1em;
+}
+
+.markdown-preview-view h6,
+.HyperMD-header-6,
+.cm-header-6 {
+  font-family:"Suisse Screen","Sequel Sans Body","Neue Haas Unica Pro",sans-serif;
+  letter-spacing:0.07em;
+  background-color:var(--background-primary)!important;
+  font-weight:300!important;
+  font-size:0.7em;
+  color:var(--interactive-accent);
+  text-align:left;
+}
+/* --------------- */
+.cm-s-obsidian pre.HyperMD-header {
+  padding-left:0 !important;
+  padding-top: 0em;
+}
+
+
+/* ===== JEFF STUFF ==== */
+
+/* 1.1.2 link underline */
+
+.markdown-preview-view .internal-link {
+  text-decoration: none;
+  color: var(--text-accent-hover) !important;
+}
+
+.markdown-preview-view .internal-link:hover {
+  text-decoration: none;
+  color: var(--text-accent-hover) !important;
+}
+
+.cm-s-obsidian span.cm-url {
+  text-decoration: none;
+  color: var(--text-accent-hover) !important;
+}
+.cm-s-obsidian span.cm-hmd-internal-link:hover {
+  text-decoration:none;
+  color: var(--text-accent-hover) !important;
+}
+
+  /*== extra ==*/
+  .markdown-preview-view .internal-link.is-unresolved {
+    color: var(--text-normal) !important;
+  }
+  .cm-s-obsidian span.cm-link, .cm-s-obsidian span.cm-hmd-internal-link {
+    color: var(--text-accent-hover);
+    text-decoration: none;
+}
+
+/* === external links ===*/
+.minimal-theme.links-ext-on .external-link, .external-link {
+  color: var(--text-accent-hover);
+  text-decoration:none;
+}
+
+/**** 4.7 Hashtag in Headings ****/
+/* inline formatting, link targets and [[ ]] disappears if not active line. 
+I ditched this because it hid the code-block-backticks*
+div:not(.CodeMirror-activeline)>.CodeMirror-line span.cm-formatting { display: none!important; }
+
+/* @cotemaxime on Discord - change the colour & size of the hashtag in Headings, in edit mode */
+
+span.cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1 {
+  color: var(--header-hash)!important;
+  font-size: 0.5em !important;
+}
+span.cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2 {
+  color: var(--header-hash)!important;
+  font-size: 0.5em !important;
+}
+span.cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3 {
+  color: var(--header-hash)!important;
+  font-size: 0.5em !important;
+}
+span.cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4 {
+  color: var(--header-hash)!important;
+  font-size: 0.5em !important;
+}
+span.cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5 {
+  color: var(--header-hash)!important;
+  font-size: 0.5em !important;
+}
+span.cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6 {
+  color: var(--header-hash)!important;
+  font-size: 0.5em !important;
+}
+  /**** 4.7 @cotemaxime ENDS */
+
+  /*HR = keep*/
+  .markdown-preview-view hr {
+    border-top: 1px;
+    border-style: dashed; 
+    border-color: var(--text-accent);    
+  }
+
+
+/* === style strikethrough tilde's, for comment styling in monospace === */
+span.cm-comment.cm-strikethrough {
+	font-family:Inconsolata,"Suisse Int'l Mono",",NanumGothicCoding","M+ 1mn";
+	font-weight: 400;
+	text-decoration: none;
+}
+/*.cm-s-obsidian span.cm-comment {
+  color: var(--text-muted);
+}*/
+
+/*==KillerWhale (Lionel Davoust) — 31/03/2021
+If you want to have paragraphs inside a block 
+(only one carriage return, non-strict Markdown paragraphs) 
+be visually spaced in preview mode, our beloved devs 
+gave me a solution! Add this to your CSS to get some 
+line spacing between paragraphs: ==*/
+.markdown-preview-view br {
+  content: '';
+  display: block;
+  margin-top: 10px;
+}
+
+.CodeMirror pre.CodeMirror-line {
+padding-bottom: 15px;
+}
+
+
+/* ==== Hover colour in File Explorer ==== */
+.nav-file-title:hover,
+.nav-folder-title:hover,
+.nav-file-title-content:hover,
+.nav-folder-title-content:hover{
+color: var(--text-accent-hover) !important;
+}
+
+/* === file explorer - elipsis for long names ===*/
+.nav-file-title, .nav-folder-title {
+  width: max-content;
+}
+
+.nav-file-title-content, .nav-folder-title-content {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+}
+/* === */
+
+/*=== hieu (they/them) — 30/06/2021 ===
+in case anyone else is frustrated about not being able
+ to view line breaks in Preview without <br> in most themes,
+  can add this as snippy ===*/
+
+.markdown-preview-view div p {
+    margin-bottom: 1.5rem;
+}
+
+figcaption {
+  color:var(--interactive-a)!important;
+  font-style:italic !important;
+  font-size: 0.89em !important;
+  font-family: "Neue Haas Unica Pro" !important;
+  font-weight: 350 !important;
+  padding: 3px !important;
+  text-align: left !important;
+}
+
+/*space between folded headers - @SlRvb*/
+.CodeMirror-foldmarker {
+  padding-bottom: 10px!important;
+}
+
+.cm-header + .CodeMirror-widget .CodeMirror-foldmarker {
+  padding-bottom: 10px;
+}
+
+.markdown-preview-view pre,
+.markdown-preview-view code {
+margin-right: 20px;
+}
+
+.tooltip {
+  font-size:var(--font-smaller);
+  line-height:1.2;
+  padding:4px 8px;
+  border-radius:4px;
+  background-color: var(--background-primary-alt);
+  color: var(--text-normal);
+  position: fixed;
+}
+
+nav-folder-title-content {
+  border-top: 0px;
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+/* == @Chetachi, trying to solve my tooltips problem == */
+.hider-ribbon .side-dock-settings {
+  padding: 0 2px 0px 0;
+}
+
+/*.hider-ribbon .side-dock-ribbon {
+  padding: 0 2px 24px 0;
+}
+
+/* Makes the front matter text size smaller == only the line-height seems to work.*/
+.cm-hmd-frontmatter {
+  font-size: 0.7em; 
+  line-height: 1em; 
+  display: block; 
+} 
+
+html {
+  -webkit-font-smoothing: antialiased !important;
+}
+
+/* Vault launch progress bar change color from Klaas, on Discord #css-themes 2021-08-03 1718*/
+.progress-bar-subline {
+  position: absolute;
+  background-color: var(--text-accent);
+  height: 5px;
+}
+
+.progress-bar-line {
+  position: absolute;
+  opacity: 0.2;
+  background-color: var(--text-accent);
+  width: 150%;
+  height: 5px;
+}
+
+cm.setOption("styleActiveLine", {nonEmpty: true});
+
+/*======*/
+
+
+.view-header {
+  background-color:red !important;
+  border:none !important;
+}
+

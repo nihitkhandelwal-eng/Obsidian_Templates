@@ -1,0 +1,29 @@
+{
+  "baseFontSize": 19,
+  "cssTheme": "",
+  "enabledCssSnippets": [
+    "Metadata Correction",
+    "Minimal Theme Icons",
+    "Andy Matuschak Mode",
+    "Fade Status Bar",
+    "Merged Snippet",
+    "Timeline Snippet",
+    "New Quote",
+    "File Explorer",
+    "Realistic & Multicolor Highlights",
+    "Scrollbars - Improved",
+    "Side Notes",
+    "Blockquotes",
+    "Quotation Marks - Obsidianite",
+    "Checkbox",
+    "Relationship Lines",
+    "Header Color",
+    "Header Size Customization",
+    "Tag Pills",
+    "Peeking Status Bar",
+    "Image Inversion",
+    "No Scrollbars in Popover & Embeds",
+    "Graph Colors"
+  ],
+  "baseFontSizeAction": true
+}

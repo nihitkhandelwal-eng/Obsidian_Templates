@@ -1,0 +1,20 @@
+{
+  "promptDelete": false,
+  "showFrontmatter": false,
+  "spellcheck": true,
+  "foldHeading": true,
+  "foldIndent": true,
+  "trashOption": "local",
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "🟢 Inbox",
+  "attachmentFolderPath": "♻️ Admin/Attachements",
+  "communityPluginSortOrder": "download",
+  "showLineNumber": false,
+  "strictLineBreaks": false,
+  "fileSortOrder": "alphabetical",
+  "useMarkdownLinks": false,
+  "communityThemeSortOrder": "download",
+  "defaultViewMode": "source",
+  "tabSize": 4
+}

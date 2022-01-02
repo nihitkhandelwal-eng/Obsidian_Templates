@@ -1,0 +1,226 @@
+{
+  "main": {
+    "id": "6aec1078c3da82ee",
+    "type": "split",
+    "children": [
+      {
+        "id": "4ae26431acedb589",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "🔋 Workbench.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "db29cf8a53fe0472",
+    "type": "split",
+    "children": [
+      {
+        "id": "443df359ab19b63d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dc385582ae96b4d6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "20197d7df68c9c98",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "df",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "39fc9f88d8dbfd4d",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "e462f5eea021d545",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 219
+  },
+  "right": {
+    "id": "cdbdd8d0798bb91b",
+    "type": "split",
+    "children": [
+      {
+        "id": "d789251763a9a68e",
+        "type": "tabs",
+        "dimension": 52.76243093922651,
+        "children": [
+          {
+            "id": "1aac4b55df5e2012",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5d10588fea736027",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "b3d755a1fe756f10",
+            "type": "leaf",
+            "state": {
+              "type": "todo",
+              "state": {}
+            }
+          },
+          {
+            "id": "322168c701fb3c19",
+            "type": "leaf",
+            "state": {
+              "type": "timeline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "6b6f396d777e0d3e",
+        "type": "tabs",
+        "dimension": 47.23756906077349,
+        "children": [
+          {
+            "id": "8d7888cc45d142f1",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "🔋 Workbench.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.508761885579259,
+                  "close": true
+                }
+              }
+            }
+          },
+          {
+            "id": "41ae07aca9aade14",
+            "type": "leaf",
+            "state": {
+              "type": "toggl-report",
+              "state": {}
+            }
+          },
+          {
+            "id": "542dc12dea8ff154",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "🔋 Workbench.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e9052be299c1e79b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "🔋 Workbench.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c35a1e5f186ad805",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "🔋 Workbench.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 341
+  },
+  "active": "4ae26431acedb589",
+  "lastOpenFiles": [
+    "🔋 Workbench.md",
+    "🟢 Inbox/for ipad.md",
+    "☘️ Templates/Default Template.md",
+    "🟢 Inbox/d.md",
+    "🟢 Inbox/null.md",
+    "🌱 Journal/Review Cycles/Yearly Notes/2021.md",
+    "🌱 Journal/Review Cycles/Quarterly  Notes/2021 - Q4.md",
+    "🌱 Journal/Review Cycles/Monthly Notes/November-2021.md",
+    "🌱 Journal/Review Cycles/Weekly Notes/2021-W49.md",
+    "🌱 Journal/Daily Notes/29-Nov-21.md"
+  ]
+}

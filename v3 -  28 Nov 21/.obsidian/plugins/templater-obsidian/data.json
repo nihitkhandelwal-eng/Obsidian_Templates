@@ -1,0 +1,46 @@
+{
+  "command_timeout": 5,
+  "templates_folder": "☘️ Templates",
+  "templates_pairs": [
+    [
+      "",
+      ""
+    ]
+  ],
+  "trigger_on_file_creation": true,
+  "auto_jump_to_cursor": true,
+  "enable_system_commands": false,
+  "shell_path": "",
+  "user_scripts_folder": "♻️ Admin/Archive/Scripts",
+  "enable_folder_templates": true,
+  "folder_templates": [
+    {
+      "folder": "🌱 Journal/Daily Notes",
+      "template": "☘️ Templates/Daily Notes.md"
+    },
+    {
+      "folder": "🌱 Journal/Review Cycles/Weekly Notes",
+      "template": "☘️ Templates/Archive/Old Weekly Note Template.md"
+    },
+    {
+      "folder": "🌱 Journal/Review Cycles/Monthly Notes",
+      "template": "☘️ Templates/Monthly Note.md"
+    },
+    {
+      "folder": "🌱 Journal/Review Cycles/Quarterly  Notes",
+      "template": "☘️ Templates/Quarterly Note.md"
+    },
+    {
+      "folder": "🌱 Journal/Review Cycles/Yearly Notes",
+      "template": "☘️ Templates/Yearly Note.md"
+    }
+  ],
+  "syntax_highlighting": true,
+  "enabled_templates_hotkeys": [
+    "☘️ Templates/Highlighter.md",
+    "☘️ Templates/Embed.md",
+    "☘️ Templates/Rename Title.md",
+    "☘️ Templates/Default Template.md"
+  ],
+  "startup_templates": []
+}

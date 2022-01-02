@@ -1,0 +1,24 @@
+{
+  "customFolder": "Day Planners",
+  "mode": 1,
+  "mermaid": false,
+  "notesToDates": [
+    {
+      "notePath": "🌱 Journal/Daily Notes/25-Nov-21.md",
+      "date": "Thu Nov 25 2021"
+    },
+    {
+      "notePath": "🌱 Journal/Daily Notes/25-Nov-21.md",
+      "date": "Fri Nov 26 2021"
+    },
+    {
+      "notePath": "🌱 Journal/Daily Notes/27-Nov-21.md",
+      "date": "Sun Nov 28 2021"
+    }
+  ],
+  "completePastItems": false,
+  "circularProgress": false,
+  "nowAndNextInStatusBar": true,
+  "showTaskNotification": true,
+  "timelineZoomLevel": 1
+}
