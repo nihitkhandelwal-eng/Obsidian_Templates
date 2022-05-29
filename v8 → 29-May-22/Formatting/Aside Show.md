@@ -1,0 +1,1 @@
+<s class="aside-show"><%tp.file.cursor(0)%></s> <%tp.file.cursor(1)%>

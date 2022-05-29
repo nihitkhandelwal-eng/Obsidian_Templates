@@ -1,0 +1,1 @@
+<center><iframe width="600" height="500" src="<%tp.file.cursor(0)%>"></iframe></center>
